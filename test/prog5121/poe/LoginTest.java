@@ -1,4 +1,3 @@
-
 package prog5121.poe;
 
 import org.junit.Before;
@@ -122,3 +121,4 @@ public class LoginTest {
         assertEquals(expected, actual);
     }
 }
+

@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 
 public class PROG5121POE {
+    
 
     
     public static void main(String[] args) {
@@ -26,17 +27,17 @@ public class PROG5121POE {
         System.out.print("Enter Your South Africa Cell Phone Number: ");
         String cellPhone = scanner.nextLine();
 
-        //Registration Attempt
+//Registration Attempt
         String regStatus = userLogin.registerUser(username, password, cellPhone, firstName, lastName);
         System.out.println(regStatus);
 
-        // If registration fails, exit program
+// If registration fails, exit program
         if (!regStatus.contains("registered successfully")) {
             System.out.println("Registration failed.Please try again.");
             return;
         }
 
-        //Login Attempt 
+//Login Attempt 
         System.out.println("===== USER LOGIN =====");
         System.out.print("Enter Username: ");
         String loginUser = scanner.nextLine();

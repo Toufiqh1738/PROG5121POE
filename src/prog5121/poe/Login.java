@@ -65,7 +65,7 @@ public class Login {
             return "Cell number is incorrectly formatted, please correct the number and try again.";
         }
 
-        // Save user data upon successful validation
+// Save user data upon successful validation
         this.username = username;
         this.password = password;
         this.cellPhoneNumber = cellPhoneNumber;
